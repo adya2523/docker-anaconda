@@ -1,7 +1,7 @@
 # Dockerの利用
 ## GitHubから取得
 cloneする  
-`$ git@github.com:adya2523/docker-anaconda.git`
+`$ git clone git@github.com:adya2523/docker-anaconda.git`
 
 cloneしたディレクトリに移動
 
