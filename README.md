@@ -3,7 +3,7 @@
 cloneする  
 `$ git@github.com:adya2523/docker-anaconda.git`
 
-cloneしたフォルダに移動
+cloneしたディレクトリに移動
 
 Dockerイメージの作成
 - `<image_name>`：Dockerイメージの名前（REPOSITORY:tag）を指定
