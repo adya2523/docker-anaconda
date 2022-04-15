@@ -31,7 +31,7 @@ https://hub.docker.com/repository/docker/adya2523/anaconda
 `$ docker run -d -p 8888:8888 -v C:\git\docker-anaconda\work:/work --name <container_name> <image_name>`  
   - `-p <port>:8888`：ホストに紐づけるポートを指定
   - `-v <host_dir>:<container_dir>`：マウントするホストのディレクトリとコンテナのディレクトリを指定
-    - 例）Mac：`~/Desktop/ds_python:/work`
+    - Macの場合のコマンド例：`~/Desktop/ds_python:/work`
   - `<container_name>`：任意のDockerコンテナの名前を指定
  
 
