@@ -21,7 +21,7 @@
 ## Docker hubから取得
 - 以下のリポジトリから取得  
 https://hub.docker.com/repository/docker/adya2523/anaconda  
-`$ docker push adya2523/anaconda`
+`$ docker pu adya2523/anaconda`
 
 - Dockerコンテナの起動  
 `$ docker run -d -p 8888:8888 -v C:\git\docker-anaconda\work:/work --name <container_name> <image_name>`  
