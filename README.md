@@ -1,4 +1,17 @@
-# Dockerの利用
+## A. Docker hubから取得
+- 以下のリポジトリから取得  
+https://hub.docker.com/repository/docker/adya2523/anaconda  
+`$ docker pull adya2523/anaconda`
+
+- Dockerコンテナの起動  
+`$ docker run -d -p 8888:8888 -v C:\git\docker-anaconda\work:/work --name <container_name> <image_name>`  
+  - `-p <port>:8888`：ホストに紐づけるポートを指定
+  - `-v <host_dir>:<container_dir>`：マウントするホストのディレクトリとコンテナのディレクトリを指定
+    - 例）Mac：`~/Desktop/ds_python:/work`
+  - `<container_name>`：任意のDockerコンテナの名前を指定
+  - `<image_name>`：adya2523/anaconda
+
+# B-1. Dockerの利用
 ## GitHubから取得
 - cloneする  
 `$ git clone git@github.com:adya2523/docker-anaconda.git`
@@ -7,7 +20,7 @@
 
 - Dockerイメージの作成  
 `$ docker build -t <image_name>`
-  - `<image_name>`：Dockerイメージの名前（REPOSITORY:tag）を指定
+  - `<image_name>`：任意のDockerイメージの名前（REPOSITORY:tag）を指定
   
 
 - Dockerコンテナの起動  
@@ -15,23 +28,9 @@
   - `-p <port>:8888`：ホストに紐づけるポートを指定
   - `-v <host_dir>:<container_dir>`：マウントするホストのディレクトリとコンテナのディレクトリを指定
     - 例）Mac：`~/Desktop/ds_python:/work`
-  - `<container_name>`：Dockerコンテナの名前を指定
+  - `<container_name>`：任意のDockerコンテナの名前を指定
 
-
-## Docker hubから取得
-- 以下のリポジトリから取得  
-https://hub.docker.com/repository/docker/adya2523/anaconda  
-`$ docker pu adya2523/anaconda`
-
-- Dockerコンテナの起動  
-`$ docker run -d -p 8888:8888 -v C:\git\docker-anaconda\work:/work --name <container_name> <image_name>`  
-  - `-p <port>:8888`：ホストに紐づけるポートを指定
-  - `-v <host_dir>:<container_dir>`：マウントするホストのディレクトリとコンテナのディレクトリを指定
-    - 例）Mac：`~/Desktop/ds_python:/work`
-  - `<container_name>`：Dockerコンテナの名前を指定
-
-
-# （参考）Docker hubにpush
+# （参考）B-2. Docker hubにpush
 - Dockerhubにリポジトリ作成  
 例）`adya2523/docker-anaconda`
 
