@@ -2,7 +2,7 @@
 A. Docker hubから取得 または  
 B-1. GitHubから取得 でDockerコンテナを起動する
 
-B-1で作成したDockerイメージをDOckerHubにpushしたい場合，B-2を参照
+B-1で作成したDockerイメージをDockerHubにpushしたい場合，B-2を参照
 
 ## A. Docker hubから取得
 - 以下のリポジトリから取得  
