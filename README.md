@@ -24,7 +24,7 @@ https://hub.docker.com/repository/docker/adya2523/anaconda
 - cloneしたディレクトリに移動
 
 - Dockerイメージの作成  
-`$ docker build -t <image_name>`
+`$ docker build . -t <image_name>`
   - `<image_name>`：任意のDockerイメージの名前（REPOSITORY:tag）を指定
  
 - Dockerコンテナの起動  
